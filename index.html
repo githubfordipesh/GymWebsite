@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipesh Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSSReset */
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url("abs.png");
+        background-repeat: no-repeat;
+        background-size: 1600px 900px;
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 22px;
+    }
+
+    .left:hover {
+        cursor: pointer;
+    }
+
+    .left img {
+        width: 89px;
+        margin: auto 15px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 16px;
+        font-size: 18px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 63%;
+        margin: 22px auto;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        /* border: 2px solid rgb(238, 255, 0); */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        display: inline;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: #cccccc;;
+        text-decoration: underline;
+        padding: 34px 23px;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 4px 14px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: rgb(93, 69, 69);
+    }
+
+    .container {
+        border: 2px solid white;
+        display: block;
+        margin: 63px auto;
+        padding: 75px;
+        width: 35%;
+        border-radius: 25px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 4px;
+        border: 2px solid brown;
+        margin: 9px auto;
+        font-size: 20px;
+        border-radius: 29px;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .container button{
+        display: block;
+        width: 500px;
+        border-radius: 29px;
+        margin: 30px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left Box for logo -->
+        <div class="left">
+            <img src="gym.png" alt="logo">
+            <div>
+                Dipesh Fitness
+            </div>
+        </div>
+        <!-- Mid Box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right Box for Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join The Best GYM of Ghaziabad Now.
+        </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mobile No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
